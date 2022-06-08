@@ -35,10 +35,6 @@ const AddTask = () => {
     setsaveTodo(value)
  }
 
-
- 
-
-
   return (
     <div className={styles.todoForm}>
       <input data-testid="add-task-input" type="text" onChange={exTodo}/>

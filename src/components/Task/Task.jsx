@@ -16,6 +16,7 @@ const Task = () => {
     axios.get('http://localhost:8080/tasks')
   .then(function (response) {
     // handle success
+    setgeTodo(response.data)
     console.log(response.data);
   })
   .catch(function (error) {
@@ -31,6 +32,7 @@ const Task = () => {
   return (
     <li data-testid="task" className={styles.task}>
       <input type="checkbox" data-testid="task-checkbox" />
+      
       <div data-testid="task-text"></div>
       {/* Counter here */}
       <Counter />
