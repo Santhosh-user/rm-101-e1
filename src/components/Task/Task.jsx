@@ -4,7 +4,7 @@ import Counter from "../Counter/Counter"
 import axios from "axios";
 
 const Task = ({lentodo,setlentodo}) => {
-  // NOTE: do not delete `data-testid` key value pair
+  // NOTE: do not delete `data-testid` key value pair 
 
   console.log(lentodo,setlentodo)
   const [geTodo, setgeTodo] = useState([])
